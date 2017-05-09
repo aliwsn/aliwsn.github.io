@@ -6,23 +6,24 @@
       "name": "mobirise3",
       "title": "Mobirise 3",
       "styling": {
-        "primaryColor": "#ff0000",
-        "secondaryColor": "#000000",
-        "successColor": "#000000",
-        "infoColor": "#000000",
-        "warningColor": "#000000",
-        "dangerColor": "#000000",
-        "titleFont": "Indie Flower",
-        "subtitleFont": "Indie Flower",
-        "textFont": "Indie Flower",
-        "isRoundedButtons": true,
+        "primaryColor": "#c0a375",
+        "secondaryColor": "#bfcecb",
+        "successColor": "#90a878",
+        "infoColor": "#7e9b9f",
+        "warningColor": "#f3c649",
+        "dangerColor": "#f28281",
+        "titleFont": "Montserrat",
+        "subtitleFont": "Lora",
+        "textFont": "Raleway",
+        "isRoundedButtons": false,
         "isAnimatedOnScroll": true,
-        "isScrollToTopButton": true
+        "isScrollToTopButton": false,
+        "isRtl": false
       }
     },
-    "versionFirst": "3.12",
-    "uniqCompNum": 15,
-    "versionPublish": "3.11.1"
+    "versionFirst": "3.12.1",
+    "uniqCompNum": 9,
+    "versionPublish": "3.12.1"
   },
   "pages": {
     "index.html": {
@@ -36,10 +37,6 @@
       },
       "components": [
         {
-          "_inherit": "menu",
-          "_tags": [
-            "Theme"
-          ],
           "_styles": {
             ".hide-buttons .nav-btn": {
               "display": "none !important"
@@ -49,9 +46,6 @@
             },
             ".navbar-toggler": {
               "color": "#ffffff"
-            },
-            ".close-icon::before, .close-icon::after": {
-              "background-color": "#ffffff"
             },
             ".link, .dropdown-item": {
               "color": "#ffffff"
@@ -63,7 +57,7 @@
               "font-size": "0.812rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
-              "color": "@primaryColor"
+              "color": "#c0a375"
             },
             ".link[aria-expanded=\"true\"], .dropdown-menu": {
               "background": "#0e0e0e"
@@ -82,24 +76,27 @@
               "transition": "color .2s ease-in-out"
             },
             ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
-              "color": "@primaryColor"
+              "color": "#c0a375"
             },
             ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
-              "color": "#ff0000!important"
+              "color": "#c0a375!important"
+            },
+            ".close-icon::before, .close-icon::after": {
+              "background-color": "#ffffff"
             }
           },
-          "_name": "ext.menu",
-          "_anchor": "ext_menu-0",
+          "_name": "menu",
+          "_anchor": "menu-0",
           "_params": {
             "bgColor": "#282828",
             "fontSize": 0.75,
             "fontName": {},
             "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": false,
-            "sticky": true,
+            "fontHoverColor": "#c0a375",
+            "transparent": true,
+            "sticky": false,
             "logo": true,
-            "showBrand": true,
+            "showBrand": false,
             "collapsed": true,
             "hideButtons": true
           },
@@ -113,69 +110,41 @@
             "iconFont": {
               "class": "mbr-iconfont mbr-iconfont-menu",
               "linkInNewWindow": false,
-              "name": "curse",
-              "family": "socicon",
+              "name": "sad-face",
+              "family": "MobiriseIcons",
               "link": "https://mobirise.com",
-              "size": "",
-              "newWindow": false,
-              "color": "#ff0000",
+              "size": 0,
               "active": true
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Alawi</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#header2-1\"><p>HOME</p></a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#msg-box8-3\">ABOUT</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"index.html#features3-b\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\"><p>PROJECTS&nbsp; &nbsp;</p></a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#features3-b\">MATH</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#features3-b\">PROGRAMMING</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#features3-b\">CHESS</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#form1-7\">CONTACT</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-primary\" href=\"https://mobirise.com/\">BUY</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">MOBIRISE</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\"></a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "header2",
-          "_anchor": "header2-1",
+          "_name": "header1",
+          "_anchor": "header1-1",
           "_params": {
-            "imageSize": 50,
             "parallax": true,
             "bgImageRadio": true,
-            "bgImage": "@THEME_PATH@/components/_images/landscape.jpg",
-            "bgColor": "#2e2e2e",
+            "showArrow": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/istock-000028317222-medium-2000x1382.jpg",
+            "bgColor": "#a07e49",
             "bgColorRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
             "bgVideoRadio": false,
-            "overlay": true,
-            "overlayOpacity": 0.3,
+            "overlay": false,
+            "overlayOpacity": 0.5,
             "overlayColor": "#000",
-            "inverse": false,
+            "contentAlign": "center",
             "showTitle": true,
             "showText": true,
-            "showButtons": false,
-            "showArrow": true
+            "showButtons": false
           },
-          "media": {
-            "image": {
-              "active": true,
-              "width": 1400,
-              "src": "@PROJECT_PATH@/assets/images/15778557-743222955831635-1087417258-o-1400x933.jpg",
-              "link": "",
-              "alt": "",
-              "title": "",
-              "linkInNewWindow": false
-            },
-            "video": {
-              "src": "https://www.youtube.com/embed/Tq7p44IA-1U",
-              "aspectratio": "16:9",
-              "autoplay": false,
-              "loop": false
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-header2",
-              "link": "",
-              "size": 250
-            }
-          },
-          "title": "Welcome to my website : )",
-          "text": "",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">MORE</a>"
+          "title": "<p>Mental Health&nbsp;&nbsp; &nbsp;</p>",
+          "text": "<a href=\"index.html#msg-box8-0\">What is Depression?</a><br><a href=\"index.html#header3-2\">What are the symptoms and causes?</a><br><a href=\"index.html#msg-box8-4\">How is Depression diagnosed</a>",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">CLICK TO EDIT</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">CLICK TO EDIT</a>"
         },
         {
           "_styles": {
@@ -187,13 +156,13 @@
             "Theme"
           ],
           "_name": "msg-box8",
-          "_anchor": "msg-box8-3",
+          "_anchor": "msg-box8-0",
           "_params": {
             "paddingTop": 3,
             "paddingBottom": 3,
             "parallax": true,
             "bgImageRadio": true,
-            "bgImage": "@THEME_PATH@/components/_images/desert.jpg",
+            "bgImage": "@PROJECT_PATH@/assets/images/maxresdefault-2000x1125.jpg",
             "bgColor": "#F2F2F2",
             "bgColorRadio": false,
             "bgVideo": {
@@ -204,10 +173,10 @@
             "overlayOpacity": 0.5,
             "overlayColor": "#222",
             "showTitle": true,
-            "showText": true,
+            "showText": false,
             "showButton": false
           },
-          "title": "About me<br>",
+          "title": "What is depression?",
           "text": "",
           "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>"
         },
@@ -215,273 +184,102 @@
           "_tags": [
             "Theme"
           ],
-          "_name": "content1",
-          "_styles": {
-            "DIV": {
-              "text-align": "center"
-            }
-          },
-          "_anchor": "content1-c",
+          "_name": "content2",
+          "_anchor": "content2-1",
           "_params": {
             "paddingTop": 1,
             "paddingBottom": 1,
             "bgColor": "#fff"
           },
-          "text": "<br><div><i>Hello everybody my name is Ali Almalky im 14 years old.</i></div><div><i>I live right now in Berlin but im from Iraq .</i></div><div><i>I like programming since I was small.</i></div><div><i>I am learning Right now HTML,CSS,and PHP.</i></div><div><i>I hope you will enjoy my website :)</i></div><div><i>Please contact me for suggestions for my website.</i></div><div><br></div>"
+          "text": "<blockquote>Most people have felt sad or depressed at times. Feeling depressed can be a normal reaction to loss, life's struggles . But when feelings of intense sadness -- including feeling helpless, hopeless, and worthless ,last for many days to weeks and keep you from functioning normally. our depression may be something more than sadness. It may very well be clinical depression (a treatable medical condition).</blockquote>"
         },
         {
-          "_inherit": "testimonials1",
           "_styles": {
-            ".mbr-section-title": {
-              "color": "#efefef"
-            },
-            ".mbr-author-name": {
-              "color": "#ccc"
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
             }
           },
           "_tags": [
             "Theme"
           ],
-          "_name": "testimonials3",
-          "testimonial": [
-            {
-              "text": "<p>I really like programming since i was small . I am super thankful to may parents the they supported me since i was small : ) . Right now I am learning HTML,PHP, and CSS.</p>",
-              "media": {
-                "image": {
-                  "src": "@THEME_PATH@/components/_images/face3.jpg",
-                  "class": "img-circle",
-                  "height": 160,
-                  "width": 160,
-                  "active": true
-                }
-              },
-              "authorName": "PROGRAMMING",
-              "authorBio": "User"
-            },
-            {
-              "text": "<p>First of all I want to thank my father for supporting me and especcialy in Math (and my mother for sure). I am really good in Math and for that reason i skipped third,fouth and sixth grade into only one year. Right now I am studying IGSCE core mathematics and next year I am doing the extended course.</p>",
-              "media": {
-                "image": {
-                  "src": "@THEME_PATH@/components/_images/face1.jpg",
-                  "class": "img-circle",
-                  "height": 160,
-                  "width": 160,
-                  "active": true
-                }
-              },
-              "authorName": "MATH",
-              "authorBio": "User"
-            },
-            {
-              "text": "<p>Right now I am developing my skills in Chess,By attendin a chess club in Berlin Metropolitan School</p>",
-              "media": {
-                "image": {
-                  "src": "@THEME_PATH@/components/_images/face2.jpg",
-                  "class": "img-circle",
-                  "height": 160,
-                  "width": 160,
-                  "active": true
-                }
-              },
-              "authorName": "CHESS",
-              "authorBio": "User"
-            }
-          ],
-          "_anchor": "testimonials3-e",
+          "_name": "header3",
+          "_anchor": "header3-2",
           "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "count": 3,
-            "showImages": false,
-            "showName": true,
-            "showBio": false,
-            "bgImageRadio": true,
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#7e9b9f",
+            "showMeta": false
+          },
+          "title": "<p>&nbsp;&nbsp;&nbsp;&nbsp;What causes depression?</p>",
+          "meta": ""
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content1",
+          "_anchor": "content1-6",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#fff"
+          },
+          "text": "<p>Usually what causes depression &nbsp;are <b>Personal factors</b>,like:</p><p><b>Family</b> <b>history</b> – Depression can run in families and some people will be at an increased genetic risk.</p><p><b>Personality</b> – Some people may be more at risk of depression because of their personality, particularly if they have a tendency to worry a lot, have low self-esteem.</p><p><b>Serious medical illness</b> – The stress and worry of coping with a serious illness can lead to depression, especially if you’re dealing with long-term management.</p><p><b>Drug and alcohol use </b>– Drug and alcohol use can both lead to and result from depression. Many people with depression also have drug and alcohol problems.</p><p><br></p><p><br></p>"
+        },
+        {
+          "_inherit": "msg-box5",
+          "_styles": {
+            ".mbr-section-title, .lead p": {
+              "color": "#fff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box6",
+          "_anchor": "msg-box6-8",
+          "_params": {
+            "imageSize": 50,
+            "paddingTop": "3",
+            "paddingBottom": "3",
             "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/landscape2.jpg",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/depression-diagnosis-2000x1127.jpg",
             "bgColor": "#fff",
             "bgColorRadio": false,
-            "overlay": true,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222",
-            "showTitle": true,
-            "showSubtitle": false
-          },
-          "title": "My projects",
-          "subtitle": "Shape your future web project with sharp design and refine coded functions."
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "map2",
-          "_anchor": "map2-5",
-          "_params": {
-            "paddingTop": 4,
-            "paddingBottom": 4,
-            "bgColor": "#fff",
-            "googleMap": {
-              "address": "Langhansstr. 4 ,Berlin ,",
-              "placeId": "ChIJK_s-c-hNqEcRBkCubNxytCk",
-              "state": "ok",
-              "stateDetails": ""
-            }
-          }
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "form1",
-          "_styles": {
-            ".form-control-label": {
-              "color": "#232323"
-            }
-          },
-          "_anchor": "form1-7",
-          "_params": {
-            "labelsColor": "#232323",
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#fff",
-            "bgColorRadio": true,
-            "overlay": false,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222",
-            "showTitle": true,
-            "showSubTitle": true
-          },
-          "title": "CONTACT FORM",
-          "subtitle": "",
-          "form": {
-            "action": "aalmalky510@gmail.com",
-            "alerts": {
-              "success": "Thanks for filling out form!"
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
             },
-            "fields": {
-              "name": {
-                "title": "Name",
-                "visible": true,
-                "customTitle": "Name*"
-              },
-              "email": {
-                "title": "Email",
-                "visible": true,
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "title": "Phone",
-                "visible": true,
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "Message"
-              }
-            }
-          },
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-primary\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">CONTACT US</a>"
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "contacts3",
-          "_anchor": "contacts3-9",
-          "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#2e2e2e",
-            "bgColorRadio": true,
+            "bgVideoRadio": false,
             "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#3C3C3C"
+            "overlayOpacity": 0.5,
+            "overlayColor": "#000",
+            "inverse": true,
+            "showTitle": true,
+            "showText": true,
+            "showButtons": false
           },
-          "logo": {
+          "media": {
             "image": {
-              "src": "@THEME_PATH@/components/_images/logo.png",
-              "class": "card-img-top",
-              "width": 265
+              "width": 1400,
+              "src": "@THEME_PATH@/components/_images/desert.jpg"
+            },
+            "video": {
+              "src": "https://www.youtube.com/watch?v=q-uckNkRVLs",
+              "aspectratio": "16:9",
+              "autoplay": false,
+              "loop": false,
+              "active": true
             },
             "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-logo-contacts3",
-              "linkInNewWindow": false,
-              "name": "curse",
-              "family": "socicon",
+              "class": "mbr-iconfont mbr-iconfont-msg-box5",
               "link": "",
-              "size": 0,
-              "active": true,
-              "color": "#ff0000"
+              "size": 250
             }
           },
-          "text1": "Ali Almalky",
-          "media1": {
-            "iconFont": {
-              "active": true,
-              "class": "mbr-iconfont-company-contacts3",
-              "name": "phone",
-              "size": 0,
-              "family": "et-line"
-            }
-          },
-          "text2": "+4915252804499",
-          "media2": {
-            "iconFont": {
-              "active": true,
-              "class": "mbr-iconfont-company-contacts3",
-              "name": "map-pin",
-              "size": 0,
-              "family": "et-line"
-            }
-          },
-          "text3": "Langhansstraße 4, 13086 Berlin, Germany<br>",
-          "media3": {
-            "iconFont": {
-              "active": true,
-              "class": "mbr-iconfont-company-contacts3",
-              "name": "envelope",
-              "size": 0,
-              "family": "et-line"
-            }
-          },
-          "text4": "<a href=\"mailto:support@mobirise.com\">a</a>almalky510@gmail.com",
-          "title1": "",
-          "text5": "",
-          "text6": "<strong>Contacts</strong><br>Email: aalmalky510@gmail.com<br>Phone: +4915252804499<br><br><br><strong>Address</strong><br><strong><br></strong>Langhansstraße 4, 13086 Berlin,Germany<br>",
-          "form": {
-            "title": "MESSAGE",
-            "action": "aalmalky510@gmail.com",
-            "alerts": {
-              "success": "Thanks for filling out form!"
-            },
-            "fields": {
-              "name": {
-                "title": "Name",
-                "visible": true,
-                "customTitle": "Name*"
-              },
-              "email": {
-                "title": "Email",
-                "visible": true,
-                "customTitle": "Email*"
-              },
-              "phone": {
-                "title": "Phone",
-                "visible": true,
-                "customTitle": "Phone"
-              },
-              "message": {
-                "title": "Message",
-                "customTitle": "Message"
-              }
-            }
-          },
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"btn btn-sm btn-black\">Contact us</a>"
+          "title": "How is Depression Diagnosed?<span style=\"font-size: 3rem; line-height: 1.1;\">&nbsp;</span>",
+          "text": "Depression or depressive disorder is a syndrome that reflects a sad mood exceeding normal sadness or grief.<br>",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">MORE</a>"
         }
       ]
     }
